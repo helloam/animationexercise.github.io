@@ -1,0 +1,58 @@
+#background {
+  position: relative;
+  background-color: white;
+  width: 600px;
+  height: 476px;
+  margin: 0 auto; }
+#flower {
+  position: center;
+  top: 20px;
+  left: 172px;
+  width: 256px; }
+
+  .petal {
+  background-color: #fec8d8;
+  float: left;
+  margin: 1px 1px 0 0;
+  width: 125px;
+  height: 125px;    
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px; }
+#topleft {
+  -moz-border-radius-bottomright: 30;
+  -webkit-border-bottom-right-radius: 30;
+  border-bottom: 2px solid #ffdfd3;
+  border-right: 2px solid #ffdfd3;
+  animation-name: colorchange;
+  animation-duration: 5s;
+   animation-direction: reverse;}
+#topright {
+  -moz-border-radius-bottomleft: 30;
+  -webkit-border-bottom-left-radius: 30;
+  border-bottom: 2px solid #ffdfd3;
+  border-left: 2px solid #ffdfd3; 
+  animation-name: colorchange;
+  animation-duration: 5s }
+#bottomleft {
+  -moz-border-radius-topright: 30;
+  -webkit-border-top-right-radius: 30;
+  border-top: 2px solid #ffdfd3;
+  border-right: 2px solid #ffdfd3; 
+  animation-name: colorchange;
+  animation-duration: 5s}
+
+#bottomright {
+  -moz-border-radius-topleft: 30;
+  -webkit-border-top-left-radius: 30;
+  border-top: 2px solid #ffdfd3;
+  border-left: 2px solid #ffdfd3;
+  animation-name: colorchange;
+  animation-duration: 5s;
+  animation-direction: reverse; }
+
+  @keyframes colorchange {
+  0%   {background-color: #fec8d8;}
+  25%  {background-color: #957dad;}
+  50%  {background-color: #e0bbe4}
+  100% {background-color: #ffdfd3;}
+}
